@@ -223,25 +223,25 @@ export interface ParsedMail {
      */
     date?: Date;
     /**
-     * An address object for the `To:` header.
+     * An address object or array of address objects for the `To:` header.
      */
-    to?: AddressObject;
+    to?: AddressObject | AddressObject[];
     /**
-     * An address object for the `From:` header.
+     * An address object or array of address objects for the `From:` header.
      */
-    from?: AddressObject;
+    from?: AddressObject | AddressObject[];
     /**
-     * An address object for the `Cc:` header.
+     * An address object or array of address objects for the `Cc:` header.
      */
-    cc?: AddressObject;
+    cc?: AddressObject | AddressObject[];
     /**
-     * An address object for the `Bcc:` header (usually not present).
+     * An address object or array of address objects for the `Bcc:` header (usually not present).
      */
-    bcc?: AddressObject;
+    bcc?: AddressObject | AddressObject[];
     /**
-     * An address object for the `Reply-To:` header.
+     * An address object or array of address objects for the `Reply-To:` header.
      */
-    replyTo?: AddressObject;
+    replyTo?: AddressObject | AddressObject[];
     /**
      * The Message-ID value string.
      */
